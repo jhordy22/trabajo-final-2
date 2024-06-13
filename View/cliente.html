@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPINIA | Candidatos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styless.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle img-lg" src="img/usuario.png"/>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">Administrador</span>
+                                <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="index.html">Dashboard v.1</a></li>
+                            <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="candidatos.html"><i class="fa fa-clock-o"></i> <span class="nav-label">Clientes</span><span></span></a>
+                    </li>
+                    <li>
+                        <a href="horario-general-virtual.html"><i class="fa fa-clock-o"></i> <span class="nav-label">Contrato</span></a>
+                    </li>
+                    <li>
+                        <a href="layouts.html"><i class="fa fa-group"></i> <span class="nav-label">Proyectos</span><span ></span></a>                        
+                    </li>
+                    <li>
+                        <a href="dashboard_areas.html"><i class="fa fa-tags"></i> <span class="nav-label">Pagos</span></a>
+                    </li>
+                    <li>
+                        <a href="responsabilidades_areas.html"><i class="fa fa-list-alt"></i> <span class="nav-label">Actividades</span></a>
+                    </li>
+                    <li>
+                        <a href="Maquinas.html"><i class="fa fa-desktop"></i> <span class="nav-label">Grupo de Trabajo</span></a>
+                    </li>
+                    <li>
+                        <a href="configuracion.html"><i class="fa fa-cog"></i> <span class="nav-label">Ajustes</span></a>
+                    </li>
+                    <li>
+                        <a href="login.html"><i class="fa fa-sign-out"></i> <span class="nav-label">Cerrar Sesion</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="login.php">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+                <li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-10">
+                <h2>Clientes</h2>
+                <ol class="breadcrumb">
+                    
+                    <li class="breadcrumb-item active">
+                        <strong>Clientes</strong>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-2 mt-4   ">
+                <button id="modalBtn" class="btn btn-success dim float-right"  type="button">Agregar</button>
+            </div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="m-t-none m-b text-center"> Registrar Cliente</h3>
+                        <div class="row">
+                                    
+                            <div class="col-sm-6 text-center">      
+                                <div class="custom-file w-200 h-300 " style="padding: 20px 0px;">
+                                    <p class="text-center">
+                                        <a><i class="fa fa-user-circle big-icon"></i></a>
+                                    </p> 
+                                    <div class="form-group"><label><h5 class="m-t-none">NOMBRES:</h5></label><input style="padding: 1px 8px;" class="form-control mb-4" type="text"  id="nombre" placeholder=""></div>
+                                    <div class="form-group"><label><h5 class="m-t-none">APELLIDO:</h5></label><input style="padding: 1px 8px;" class="form-control mb-4" type="text"  id="apellido" placeholder=""></div>           
+                                </div>
+                                           
+                            </div>         
+                            <div class="col-sm-6 ">
+                                    <span id="cierraModalAgregar" class="close">&times;</span>
+                                    <div class="form-group text-center"><label><h5 class="m-t-none">TELEFONO:</h5></label><input style="padding: 1px 8px;" class="form-control mb-4" type="number" id="telefono"></div>
+                                    <div class="form-group text-center"><label><h5 class="m-t-none text-center">CORREO:</h5></label><input style="padding: 1px 8px;" class="form-control mb-4" type="text" id="correo"></div>
+                                    <div class="form-group text-center"><label><h5 class="m-t-none text-center">DNI:</h5></label><input style="padding: 1px 8px;" class="form-control mb-5" type="text" id="dni"></div>
+                                    <div class="d-flex justify-content-center">
+                                        <button id="myForm" class="btn btn-sm btn-primary fa btn-success " style="font-size: 18px; width: 100px;" type="button">Agregar</button>
+                                    </div>                   
+                            </div>       
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--Final modal-->
+
+        </div>
+        <br>
+
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div style="background-color: orange;" class="ibox-content col-md-11">
+                <h1 style="color: black;" class="text-center font-bold"> Lista de Clientes</h1>
+            </div>
+        </div>
+        <br>
+        
+
+        <!--buscador y filtrar-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ibox-content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="col-md-6 p-0">
+                            <input type="text" class="form-control" id="bus"  oninput="buscar(this.value)" placeholder="Buscar...">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <select id="miSelect" onchange="filtroEstado(this.value)">
+                              <option selected disabled>Filtrado de estado</option>
+                              <option value="Activado">Activado</option>
+                              <option value="Desactivado">Desactivado</option>
+                              <option value="todos">Todos</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--final-->
+
+        
+        
+        <!--Final-->
+
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div id="ctnCuadrado" class="row ">
+                <!--Aqui colocar los cuadraditos-->
+                
+                <!--final-->    
+            </div>
+   
+        </div>
+  
+    </div>
+
+    <div id="modaldos" class="modaldos">
+        <div class="modal-contentdos">
+            <span id="cierraModalEditar" class="closedos">&times;</span>
+            <div id="ctnEdit">   
+            </div>
+        </div>
+    </div>
+     <!-- fin modal de editar -->
+
+    <div id="modaltres" class="modaltres">
+        <div class="modal-contenttres">
+            
+            <div id="ctnEnd">
+                <p id="resEnd">CLIENTE ELIMINADO</p>
+                 <p id="resCreado">CLIENTE REGISTRADO</p>
+            </div>
+            
+            
+
+        </div>
+    </div>
+    <!-- modal fin eliminar -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+    <script src="js/plugins/switchery/switchery.js"></script>
+</body>
+</html>

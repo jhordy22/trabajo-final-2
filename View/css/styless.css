@@ -1,0 +1,184 @@
+/* Modal Agregar */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#resActualizar {
+    display: none;
+}
+
+.modal-custom {
+    max-width: 700px; 
+    
+}
+
+/* Modal Editar */
+.modaldos {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contentdos {
+    background-color: #fefefe;
+    margin: 100px auto;
+    padding: 35px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.closedos {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+}
+
+.closedos:hover,
+.closedos:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Eliminar */
+.modaltres {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contenttres {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+#resEnd {
+    display: none;
+}
+
+#resCreado {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #1ab394;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.estado {
+    margin-left: 10px;
+}
+
+
+#miSelect{
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px;
+    width: 180px;
+    border: none;
+    left: -20px;
+    background: #e4cf5e;
+    color: white;
+    font-weight: 700;
+}
+
+/* Desactiva el estilo para focus-visible */
+#miSelect:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
